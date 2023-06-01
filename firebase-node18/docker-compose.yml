@@ -3,9 +3,9 @@ version: "3.8"
 services:
   app:
     build: .
-    image: node18
+    image: firebase-node18
     tty: true
-    container_name: node18-dev
+    container_name: firebase-node18-dev
     volumes:
       - ~/workspace/:/home/node/workspace
       - ~/.ssh:/home/node/.ssh:ro

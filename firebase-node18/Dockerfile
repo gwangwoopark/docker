@@ -28,6 +28,7 @@ RUN chown node:node /home/node/.zshrc /home/node/.p10k.zsh
 
 USER root
 RUN apt install -y default-jdk
+RUN npm install -g firebase-tools
 
 USER node
 WORKDIR /home/node 
